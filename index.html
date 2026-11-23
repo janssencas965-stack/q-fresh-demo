@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Q-Fresh | Groothandel in groenten en fruit, Roeselare</title>
+<meta name="description" content="Q-Fresh is een familiale groothandel in groenten en fruit in Roeselare. Dagvers assortiment, snelle en persoonlijke service. Quality is our priority.">
+<meta property="og:title" content="Q-Fresh | Groothandel in groenten en fruit">
+<meta property="og:description" content="Dagvers fruit, groenten, noten en sappen. Familiebedrijf in Roeselare, open vanaf 04:00.">
+<meta property="og:image" content="img/Pink-lady-11.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3c7 2 11 8 10 14-6 0-12-3-14-9 1-3 2-4 4-5z' fill='%23ff6a13'/%3E%3Cpath d='M5 20c5-3 10-1 12 4-4 3-9 3-12-4z' fill='%23ff6a13'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<a class="skip" href="#view">Naar de inhoud</a>
+
+<header class="top" id="top">
+  <div class="bar">
+    <a class="logo" href="#/" aria-label="Q-Fresh, naar de startpagina">
+      <svg viewBox="0 0 34 34" width="30" height="30" aria-hidden="true"><path d="M17 2c8 2 13 9 11 16-7 0-13-3-15-10 1-3 2-5 4-6z" fill="currentColor"/><path d="M4 21c6-3 11-1 13 5-5 3-10 3-13-5z" fill="currentColor"/></svg>
+      <span>Q-Fresh</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Hoofdmenu">
+      <a href="#/" data-r="home">Home</a>
+      <div class="has-mega" id="megaWrap">
+        <a href="#/assortiment" data-r="assortiment" aria-haspopup="true" aria-expanded="false" id="megaBtn">Producten <svg viewBox="0 0 12 8" width="10" height="7" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        <div class="mega" id="mega" role="region" aria-label="Producten"></div>
+      </div>
+      <a href="#/over-ons" data-r="over-ons">Over ons</a>
+      <a href="#/team" data-r="team">Ons team</a>
+      <a href="#/contact" data-r="contact">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <span class="open-pill" id="openPill" aria-live="polite"></span>
+      <button class="list-btn" id="listBtn" aria-haspopup="dialog">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 5h12M4 10h12M4 15h7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+        Aanvraaglijst <b id="listCount">0</b>
+      </button>
+      <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="view" tabindex="-1">
+
+<!-- ============ HOME ============ -->
+<section class="page" data-page="home" hidden>
+  <div class="hero">
+    <div class="hero-in">
+      <div class="hero-copy">
+        <p class="kicker r1">Familiale groothandel in Roeselare</p>
+        <h1 class="r2">Vers, elke ochtend vanaf 04:00.</h1>
+        <p class="lead r3">Fruit, groenten, noten, sappen en kruiden voor winkels, horeca en grootkeukens. Dagverse producten, snelle en persoonlijke service.</p>
+        <div class="cta r4">
+          <a class="btn primary" href="#/assortiment">Bekijk het assortiment</a>
+          <a class="btn glass" href="#/contact">Vraag een offerte</a>
+        </div>
+        <p class="hero-status r5"><span class="dot" id="hcDot"></span><b id="hcStatus"></b><span id="hcSub"></span></p>
+      </div>
+      <figure class="hero-photo"><img src="img/hero-markt.jpg" alt="Marktkraam met vers fruit en groenten"></figure>
+    </div>
+  </div>
+
+  <div class="wrap block">
+    <header class="sec-head">
+      <h2>Wat we leveren</h2>
+      <a class="more" href="#/assortiment">Volledig assortiment</a>
+    </header>
+    <div class="bento" id="bento"></div>
+  </div>
+
+  <div class="wrap block">
+    <div class="values">
+      <div class="values-tabs" role="tablist" aria-label="Waar Q-Fresh voor staat" id="vTabs"></div>
+      <div class="values-panel" id="vPanel" role="tabpanel"></div>
+    </div>
+  </div>
+
+  <div class="wrap block">
+    <a class="sap" href="#/assortiment/sappen">
+      <div class="sap-copy">
+        <h2>Schulp: puur sap, ambachtelijk geperst.</h2>
+        <p>Sinds 1861 staat de familie Schulp voor eerlijk fruit. Appelsap, krachtsappen van rode biet tot cranberry: zonder toevoegingen en bewaarbaar dankzij zorgvuldige pasteurisatie.</p>
+        <span class="btn primary">Bekijk de sappen</span>
+      </div>
+      <img src="img/krachtsap.jpg" alt="Schulp krachtsappen in glazen flessen" loading="lazy">
+    </a>
+  </div>
+
+  <div class="wrap block last">
+    <div class="visit">
+      <div>
+        <h2>Bestellen of langskomen?</h2>
+        <p>Oostnieuwkerksesteenweg 101, 8800 Roeselare</p>
+        <div class="cta">
+          <a class="btn primary" href="#/contact">Neem contact op</a>
+          <a class="btn line" href="tel:+3251204364">051 20 43 64</a>
+        </div>
+      </div>
+      <dl class="hours" id="hoursHome"></dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASSORTIMENT ============ -->
+<section class="page" data-page="assortiment" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Assortiment</h1>
+      <p>Alles wat we dagelijks in huis hebben. Tik op een product om het aan uw aanvraaglijst toe te voegen en vraag in één keer een prijs.</p>
+    </div>
+
+    <div class="shop">
+      <aside class="rail" aria-label="Filters">
+        <label class="search"><span class="sr">Zoek een product</span>
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="search" id="q" placeholder="Zoek: kiwi, basilicum, tomaten…" autocomplete="off">
+        </label>
+        <div class="cats" id="cats" role="group" aria-label="Productgroep"></div>
+      </aside>
+
+      <div class="results">
+        <div class="subs" id="subs" role="group" aria-label="Soort"></div>
+        <p class="count" id="count" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+        <div class="empty" id="empty" hidden>
+          <p><b>Geen product gevonden.</b></p>
+          <p>Staat het er niet bij? Wij hebben meer op bestelling. <a href="#/contact">Vraag het ons</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OVER ONS ============ -->
+<section class="page" data-page="over-ons" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Een familiebedrijf dat elke dag vers inkoopt.</h1>
+    </div>
+    <div class="about">
+      <figure class="about-pic"><img src="img/west-vlaanderen.jpg" alt="Landschap in het Heuvelland, West-Vlaanderen" loading="lazy"><figcaption>Heuvelland, West-Vlaanderen. Foto: Wikimedia Commons, CC BY-SA 2.0.</figcaption></figure>
+      <div class="about-text">
+        <p>Q-Fresh is een familiale groothandel in groenten en fruit, gevestigd in Roeselare. We bieden een totaal assortiment aan van fruit, groenten, noten, gedroogd fruit, vruchtensappen en vinaigrettes.</p>
+        <p>Kwaliteit is onze prioriteit. Dat bereiken we door dagverse producten aan te kopen en een goede rotatie in te zetten. Kwaliteit betekent bij ons niet alleen goed product, maar ook goede service: als familiebedrijf willen we het verschil maken met een snelle en persoonlijke aanpak.</p>
+      </div>
+    </div>
+
+    <div class="cards4" id="valuesCards"></div>
+
+    <header class="sec-head"><h2>Nieuws</h2></header>
+    <div class="news">
+      <article class="news-item">
+        <img src="img/VBO-vrouwendag.jpg" alt="Q-Fresh stelt Llusar-sinaasappelen voor aan de Koningin" loading="lazy">
+        <div>
+          <h3>Q-Fresh aan Hare Majesteit</h3>
+          <p>Voorstelling van Llusar-appelsienen en Sanguinelli van Valerita aan de Koningin, tijdens een debat van het VBO over ondernemerschap bij vrouwen.</p>
+        </div>
+      </article>
+      <article class="news-item">
+        <img src="img/krachtsap.jpg" alt="Krachtsappen van Schulp" loading="lazy">
+        <div>
+          <h3>Krachtsap van Schulp</h3>
+          <p>Alle krachtsappen zijn puur en ongezoet. Kenmerkend zijn de functionele eigenschappen van groente en fruit.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="page" data-page="team" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Ons team staat steeds paraat.</h1>
+      <p>Vriendelijkheid, persoonlijkheid en vooral een snelle bediening. Dit zijn de mensen die uw bestelling klaarmaken.</p>
+    </div>
+    <div class="team" id="team"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="page" data-page="contact" hidden>
+  <div class="wrap">
+    <div class="page-head"><h1>Contact</h1><p>Een prijs, een vraag of een nieuwe klant? We antwoorden snel.</p></div>
+    <div class="contact">
+      <form class="form" id="form" novalidate>
+        <label>Naam<input name="naam" required autocomplete="name"></label>
+        <label>Bedrijf<input name="bedrijf" autocomplete="organization"></label>
+        <label>E-mail<input name="mail" type="email" required autocomplete="email"></label>
+        <label>Telefoon<input name="tel" type="tel" autocomplete="tel"></label>
+        <label class="full">Bericht<textarea name="msg" rows="5" required></textarea></label>
+        <p class="note full" id="formNote">Uw aanvraaglijst wordt automatisch meegestuurd.</p>
+        <button class="btn primary full" type="submit">Verstuur bericht</button>
+      </form>
+      <div class="info">
+        <div class="card">
+          <h3>Openingsuren Roeselare</h3>
+          <dl class="hours" id="hoursContact"></dl>
+        </div>
+        <div class="card">
+          <h3>Adres</h3>
+          <p>Oostnieuwkerksesteenweg 101<br>8800 Roeselare</p>
+          <a class="more" target="_blank" rel="noopener" href="https://www.openstreetmap.org/search?query=Oostnieuwkerksesteenweg%20101%20Roeselare">Open op de kaart</a>
+        </div>
+        <div class="card">
+          <h3>Rechtstreeks</h3>
+          <ul class="phones">
+            <li><span>Kantoor</span><a href="tel:+3251204364">051 20 43 64</a></li>
+            <li><span>Dirk</span><a href="tel:+32475423938">0475 42 39 38</a></li>
+            <li><span>Nancy</span><a href="tel:+32479419359">0479 41 93 59</a></li>
+            <li><span>Sofie</span><a href="tel:+32472707524">0472 70 75 24</a></li>
+          </ul>
+          <a class="more" href="mailto:info@q-fresh.be">info@q-fresh.be</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="logo light" href="#/"><svg viewBox="0 0 34 34" width="26" height="26" aria-hidden="true"><path d="M17 2c8 2 13 9 11 16-7 0-13-3-15-10 1-3 2-5 4-6z" fill="currentColor"/><path d="M4 21c6-3 11-1 13 5-5 3-10 3-13-5z" fill="currentColor"/></svg><span>Q-Fresh</span></a>
+      <p>Quality is our priority.</p>
+    </div>
+    <div>
+      <b>Pagina's</b>
+      <a href="#/assortiment">Assortiment</a><a href="#/over-ons">Over ons</a><a href="#/team">Ons team</a><a href="#/contact">Contact</a>
+    </div>
+    <div>
+      <b>Q-Fresh</b>
+      <span>Oostnieuwkerksesteenweg 101<br>8800 Roeselare</span>
+      <a href="mailto:info@q-fresh.be">info@q-fresh.be</a>
+      <a href="https://www.facebook.com/QFreshBelgium" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <div>
+      <b>Nieuwsbrief</b>
+      <form class="news-form" id="newsForm"><input type="email" placeholder="uw@email.be" aria-label="E-mailadres" required><button>Inschrijven</button></form>
+      <small>BTW 0643.574.214</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Aanvraaglijst -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden>
+  <header><h2 id="dTitle">Aanvraaglijst</h2><button class="x" id="dClose" aria-label="Sluiten">×</button></header>
+  <div class="d-body" id="dBody"></div>
+  <footer>
+    <button class="btn primary" id="dSend">Offerte aanvragen per mail</button>
+    <button class="btn line" id="dClear">Lijst leegmaken</button>
+  </footer>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js?v=5"></script>
+<script src="app.js?v=5"></script>
+</body>
+</html>
